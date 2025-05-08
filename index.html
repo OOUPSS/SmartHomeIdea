@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NV SMART</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>NV SMART</h1>
+
+  <div class="dashboard">
+    <div class="button-panel" data-panel="light">
+      <img src="images/light.svg" alt="Licht Icon" class="icon">
+      <div class="panel-controls">
+        <label>Farbe: <input type="color" class="light-color"></label>
+        <label>Helligkeit: <input type="range" min="0" max="100" value="50" class="light-brightness"></label>
+      </div>
+    </div>
+
+    <div class="button-panel" data-panel="temp">
+      <img src="images/temp.svg" alt="Temperatur Icon" class="icon">
+      <div class="panel-controls">
+        <label>Zieltemperatur (°C): <input type="range" min="10" max="30" value="22" class="temp-control"></label>
+      </div>
+    </div>
+
+    <div class="button-panel" data-panel="camera">
+      <img src="images/camera.svg" alt="Kamera Icon" class="icon">
+      <div class="panel-controls">
+        <label><input type="checkbox" class="camera-toggle"> Kamera aktivieren</label>
+      </div>
+    </div>
+
+    <div class="button-panel" data-panel="alarm">
+      <img src="images/alarm.svg" alt="Alarm Icon" class="icon">
+      <div class="panel-controls">
+        <label><input type="checkbox" class="alarm-toggle"> Alarm aktivieren</label>
+      </div>
+    </div>
+
+    <div class="button-panel" data-panel="solar">
+      <img src="images/solar.svg" alt="Solar Icon" class="icon">
+      <div class="panel-controls">
+        <label><input type="checkbox" class="solar-toggle"> Solarpanel aktivieren</label>
+      </div>
+    </div>
+
+    <div class="button-panel" data-panel="blinds">
+      <img src="images/blinds.svg" alt="Blinds Icon" class="icon">
+      <div class="panel-controls">
+        <label><input type="checkbox" class="blinds-toggle"> Jalousien öffnen</label>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
